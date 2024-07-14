@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    margin: 2px;
+    /* border: 1px solid white;  */
+    padding: 0;
+}
+body{
+    background-color: #161616;
+    color: aliceblue;
+    padding: 2px;  
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.onel, .twol{
+    width: 260px;
+    background-color: #292929;
+    border-radius: 5px;
+    padding: 8px;
+}
+.songc:active{
+    background-color: #161616;
+}
+.phoneboy{
+    display: none;
+}
+.onel{
+    height: 30vh;
+}
+.twol{
+    /* height:60vh; */
+    height: 84%;
+    position: relative;
+    overflow-y: auto;
+}
+.footer{
+    font-size: 9px;
+    position: absolute;
+    bottom: 70px;
+}
+.foot{
+    cursor: pointer;
+}
+.l{
+    position: relative;
+    min-height: 100vh;
+}
+.closeboy{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: xx-large;
+    display: none;
+}
+.r{
+    z-index: 1;
+}
+.ronar{
+    display: none;
+}
+@media (max-width:924px) {
+    .l{
+        position:fixed;
+        /* left: -260px; */
+        left: -100vw;
+        transition: left ease 0.3s;
+        z-index: 2;
+        background-color: #161616;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .phoneboy{
+        display: block;
+    }
+    .l , .onel , .twol {
+        width: 100vw;
+    }
+    .player{
+        flex-direction: column;
+        z-index: 1.2;
+    }
+    .titl{
+        margin-top: 10px;
+    }
+    .closeboy{
+        display: block;
+    }
+    .footer{
+        /* position:fixed;
+        top:-100px; */
+        display: none;
+    }
+    .foot{
+        display: none;
+    }
+    .ronar{
+        display: block;
+    }
+    .roner{
+        display: none;
+    }
+    .sidebar{
+        left: 0px;
+    }
+}
+@media (max-width:468px) {
+    .songc{
+        width: 80vw;
+    }
+    .imog{
+        height: 74vw;
+        width: 74vw;
+    }
+}
+@media (min-width:468px){
+    .songc{
+    width:194px ;
+    }
+    .imog{
+        width: 177px;
+        height: 177px;
+    }
+}
+.cardbox{
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 7px;
+    padding: 5px;
+    margin: 8px;
+    cursor: pointer;
+    justify-content: space-between;
+    background-color: #292929;
+
+
+}
+.cardbox:active{
+    filter: invert(100%);
+}
+.r{
+    width: 100%;
+    background-color: #292929;
+    border-radius: 5px;
+    padding: 0px;
+    position: relative;
+    /* height: 200vw; */
+
+}
+h2{
+    margin: 20px;
+}
+.songcards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: orange; */
+}
+.rone{
+    height: 60px;
+    position: relative;
+    background-color: #494949;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    margin: 0%;
+    border-radius: 5px 5px 0px 0px;
+}
+.button button{
+    margin: 10px;
+    padding: 9px;
+    border: none;
+    border-radius: 100px;
+    font-size: 17px;
+    background-color:rgba(41,41,41,1);color: white;
+    cursor: pointer;
+
+}
+.button button:hover , .button button:active {
+    background-color: white;color: black;
+}
+.title{
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+.songc{
+    padding: 6px;
+    border: 0.2px solid white;
+    margin: 10px;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    cursor: pointer;
+}
+.player{
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    width: 100%;
+    justify-content: center;
+    column-gap: 10vw;
+    /* border: 1px solid white; */
+    border: none;
+    background-color: black;
+    margin: 0;
+}
+.playboy div{
+    cursor: pointer;
+}
+.playsong{
+    position: fixed;
+    display: flex;
+    bottom: 0px;
+    right: 0;
+    width: 100%;
+    justify-content: center;
+    /* border: 1px solid white; */
+    border: none;
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+}
+.playsong input{
+    width: 80%;
+    /* color: tomato; */
+    background: tomato;
+}
+.cardboxc{
+    /* height: 45vh; */
+    border: none;
+    /* overflow-y: auto; */
+    /* height: ; */
+}
+
+/* Don't use following scrollbar for production as it may not work for every user */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #292929; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 40px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  

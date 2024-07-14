@@ -1,0 +1,28 @@
+.flex{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.twent{
+    width: 20px;
+    height:20px;
+}
+.maint{
+    font-size: 22px;
+}
+.lister{
+    font-size: 17px;
+}
+.listerlogo{
+    height: 18px;
+    width: 18px;
+}
+.gap{
+    gap: 6px;
+}
+.moregap{
+    gap: 10px;
+}
+.invert{
+    fill:white;
+}
