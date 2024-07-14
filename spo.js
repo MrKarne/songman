@@ -129,7 +129,7 @@ nc("Come and get your love", "comeandgetyourlove.mp3","mpeg","https://images-wix
 nc("Starboy", "starboy.mp3","mpeg", "https://m.media-amazon.com/images/I/71PTGbAOYfL._SY355_.jpg", "Starboy", "The Weeknd")
 nc("Money rain phonk remix", "moneyrain.mp3", "mpeg", "https://i1.sndcdn.com/artworks-tt2uafhZDdP7zwGY-vyQvQA-t500x500.jpg", "Money rain", "VTORNIK")
 nc("Close eyes - DVRST","closeeyes.mp3","mpeg","https://i1.sndcdn.com/artworks-PGOhLJywxoxv3dDz-GcLxlg-t500x500.jpg","Close eyes","DVRST")
-
+nc("Mr. Blue Sky - ELO"), "Mrbluesky.mp3", "mpeg","https://images-na.ssl-images-amazon.com/images/I/71-4vcunM+L._AC_UL165_SR165,165_.jpg", "Mr. Blue Sky" ,"ELO") 
 document.querySelectorAll('.cardbox')[0].click();
 playpause();
 
